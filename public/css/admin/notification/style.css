@@ -1,0 +1,109 @@
+.notification-icon {
+    position: relative;
+}
+
+.noti {
+    position: absolute;
+    background-color: red;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    margin: -28px 13px auto;
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.noti-img {
+    width: 20px;
+    height: 20px;
+    margin-right: 24px;
+    cursor: pointer;
+}
+
+.noti-sidebar {
+    height: auto;
+    width: 46%;
+    background-color: #f5f5f5;
+    position: fixed;
+    z-index: 1;
+    top: 9.6%;
+    right: 0;
+    font-size: 1.4rem;
+    color: #000;
+}
+
+.noti-close-btn {
+    padding: 20px;
+    border-bottom: 1px solid #aaaaaa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.noti-content {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.closebtn-icon {
+    font-size: 20px;
+}
+
+#notification-list {
+    overflow-y: auto;
+    max-height: 500px;
+}
+
+.notification-list {
+    display: flex;
+    border-bottom: 1px solid #aaaaaa;
+    padding: 20px;
+}
+
+.notification-list-col1 {
+    margin-right: 10px;
+}
+
+.notification-list-col2 {
+    margin-right: 20px;
+    width: 70%;
+}
+
+.notification-list-col3 div {
+    margin-bottom: 5px;
+    margin-right: 20px;
+}
+
+.noti-span {
+    font-size: 12px;
+}
+
+.p-mention-user {
+    color: #3A6073;
+    font-weight: bold;
+}
+
+.created-time {
+    text-align: center;
+}
+
+.proj-progress-btn {
+    font-size: 12px;
+    border-radius: 15px;
+    padding: 5px 10px;
+    background-color: #3A6073;
+    color: #ffffff;
+}
+
+.notification-list {
+    cursor: pointer;
+}

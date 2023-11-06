@@ -1,0 +1,417 @@
+.MKINQUIRY .project-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.MKINQUIRY .project-search-item {
+    max-width: 300px;
+}
+
+.MKINQUIRY .project-search-frame {
+    align-items: flex-start !important;
+}
+
+.MKINQUIRY .project-add {
+    padding-left: 28px;
+}
+
+.MKINQUIRY .c-input.--w170 {
+    width: 170px;
+}
+
+.MKINQUIRY .project-list-datepicker .c-datepicker:after {
+    right: 38px;
+}
+
+.MKINQUIRY .u-pb35 {
+    padding-bottom: 35px;
+}
+
+.MKINQUIRY .c-label {
+    color: #000;
+    background-color: #fff;
+    padding: 0;
+    border-radius: 0;
+}
+
+.MKINQUIRY .c-sidebar-nav__icon {
+    top: 14px;
+    height: 20px;
+}
+
+.MKINQUIRY .list-detail {
+    color: #397ff4;
+}
+
+.MKINQUIRY .inquiry-status {
+    display: flex;
+}
+
+.MKINQUIRY .c-label {
+    text-align: left;
+}
+
+.MKINQUIRY .c-label.--w175 {
+    width: 175px;
+}
+
+.MKINQUIRY .c-select.--w270 {
+    width: 271.5px;
+}
+
+.MKINQUIRY .c-label.--w100 {
+    width: 100px;
+}
+
+.MKINQUIRY .c-label.--w105 {
+    width: 101.5px;
+}
+
+.MKINQUIRY .c-label.--align {
+    padding-top: 12px;
+}
+
+.MKINQUIRY .c-sidebar-nav__icon--question {
+    background: url("../../../img/admin/circle-question-solid.svg") no-repeat;
+}
+
+.MKINQUIRY .c-sidebar-nav__link.is-current .c-sidebar-nav__icon--question {
+    background: url("../../../img/admin/circle-question-white.svg") no-repeat;
+}
+
+.MKINQUIRY .c-box.--search {
+    flex-direction: column;
+}
+
+.MKINQUIRY .p-MK02013-table__th {
+    text-align: center;
+}
+
+.MKINQUIRY .p-MK02013-table__td {
+    text-align: center;
+    padding: 13px 15px;
+}
+
+.MKINQUIRY .icon {
+    width: 16px;
+    height: 16px;
+    display: inline;
+    margin-left: 7px;
+}
+
+.MKINQUIRY .deadline {
+    color: #ee461d;
+    justify-content: center;
+    margin-left: 23px;
+}
+
+.MKINQUIRY .priority-icon {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+.MKINQUIRY .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 50px;
+    background-color: #707761;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 60%;
+    left: 100%;
+    margin-left: -60px;
+}
+
+.MKINQUIRY .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #707761 transparent transparent transparent;
+}
+
+.MKINQUIRY .tooltip:hover .tooltiptext {
+    visibility: visible;
+    cursor: pointer;
+}
+
+.MKINQUIRY .icon-align {
+    display: flex;
+    justify-content: center;
+}
+
+/* Inquiry registration and edit */
+
+.MKINQUIRY .inquiry-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 92px;
+}
+
+.MKINQUIRY .inquiry-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.MKINQUIRY .inquiry-project-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.MKINQUIRY .inquiry-input-label {
+    width: 337px;
+    font-size: 14px;
+    margin-right: 43px;
+    text-align: start;
+}
+
+.MKINQUIRY .inquiry-content {
+    width: 100%;
+}
+
+.MKINQUIRY .c-textarea.--h100 {
+    height: 100px;
+}
+
+.MKINQUIRY .txt-overview {
+    text-align: justify;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.MKINQUIRY .c-textarea.--inquiry-align {
+    font-size: 14px;
+    padding: 10px;
+}
+
+.MKINQUIRY .c-textarea.--border-none {
+    border-style: none;
+}
+
+.MKINQUIRY .inquiry-input-label.--p47 {
+    padding-top: 47px;
+}
+
+.MKINQUIRY .inquiry-btns-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.MKINQUIRY .inquiry-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 29%;
+}
+
+.MKINQUIRY .c-select:after {
+    top: 19px;
+}
+
+/*Inquiry Detail */
+
+.MKINQUIRY .pj-detail-screen .c-table {
+    border: none !important;
+}
+
+.MKINQUIRY .pj-detail-screen .c-table-body.--horizontal .c-table__th {
+    border-right: none !important;
+}
+
+.MKINQUIRY .pj-detail-screen .c-table__th {
+    border-bottom: none;
+    background-color: #ffffff;
+}
+
+.MKINQUIRY .pj-detail-screen .c-table__td {
+    border-bottom: none;
+}
+
+.MKINQUIRY .pj-detail-screen .c-input {
+    width: 100%;
+    border: none;
+}
+
+.MKINQUIRY .pj-detail-screen .c-input.--fw500 {
+    font-weight: 500;
+}
+
+.MKINQUIRY .pj-detail-screen .pj-content {
+    height: auto;
+    overflow-y: hidden;
+}
+
+.MKINQUIRY .pj-detail-screen .a-link {
+    color: #3870d7;
+    text-decoration: underline;
+}
+
+.MKINQUIRY .pj-detail-screen .btn-row {
+    text-align: right;
+}
+
+.MKINQUIRY .tab-link li {
+    display: inline-block;
+}
+
+.MKINQUIRY .tab-link .a-tab {
+    display: block;
+    padding: 10px 15px;
+    border: 1px solid #5e5a5a;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.MKINQUIRY .tab-link li a.active-link {
+    background-color: #e6e6e6;
+    border: 1px solid #5e5a5a;
+}
+
+.MKINQUIRY .content {
+    background-color: #e6e6e6;
+    border: 1px solid #5e5a5a;
+    border-radius: 3px;
+    padding: 30px 50px;
+    display: none;
+}
+
+.MKINQUIRY .tab .active-content {
+    display: block;
+}
+
+.MKINQUIRY .comment-table .comment-th,
+.MKINQUIRY .comment-table .comment-td {
+    background-color: #e6e6e6;
+}
+
+.MKINQUIRY .comment-table .comment-th {
+    padding-left: 0px;
+}
+
+.MKINQUIRY .comment-table .comment-td {
+    padding-right: 0px;
+}
+
+.MKINQUIRY .comment-table .c-select {
+    width: 100%;
+}
+
+.MKINQUIRY .comment-table .pj-content {
+    border: 1px solid #959595;
+    width: 100%;
+}
+
+.MKINQUIRY .comment-list {
+    margin-bottom: 20px;
+    display: flex;
+    background-color: #fff2cc;
+}
+
+.MKINQUIRY .comment-list-col1 {
+    width: 85%;
+    padding: 20px 10px 20px 25px;
+}
+
+.MKINQUIRY .comment-list-col2 {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MKINQUIRY .answer-edit-link {
+    padding-right: 20px;
+    color: #3870d7;
+    cursor: pointer;
+}
+
+.MKINQUIRY .answer-delete-link {
+    color: #ff0000;
+    cursor: pointer;
+}
+
+.MKINQUIRY .comment-list p {
+    margin-bottom: 12px;
+}
+
+.MKINQUIRY #js-answer-edit-modal {
+    width: 700px;
+}
+
+.MKINQUIRY #js-answer-edit-modal .c-modal--dialog {
+    padding: 0;
+    width: 100%;
+}
+
+.MKINQUIRY #js-answer-edit-modal .c-modal-header,
+.MKINQUIRY #js-answer-delete-modal .c-modal-header {
+    color: #000000;
+    background: none !important;
+    border-bottom: 1px solid #959595;
+}
+
+.MKINQUIRY .comment-modal-header {
+    width: 95%;
+}
+
+.MKINQUIRY .comment-modal-close {
+    width: 5%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.MKINQUIRY #js-answer-edit-modal .comment-table .comment-th,
+.MKINQUIRY #js-answer-edit-modal .comment-table .comment-td {
+    background-color: #ffffff;
+}
+
+.MKINQUIRY #js-answer-edit-modal .comment-table .comment-th {
+    padding-left: 30px;
+}
+
+.MKINQUIRY #js-answer-edit-modal .btn-row {
+    padding-top: 15px;
+}
+
+.MKINQUIRY #js-answer-delete-modal {
+    padding: 0;
+}
+
+.MKINQUIRY #js-answer-delete-modal .c-modal-header__title {
+    padding-left: 20px;
+}
+
+.MKINQUIRY .edit-link-disable {
+    pointer-events: none;
+    background-color: #a9a9a9;
+}
+
+.MKINQUIRY .answer-link-disable {
+    pointer-events: none;
+    color: #a9a9a9;
+}
+
+.MKINQUIRY .c-table__th {
+    text-align: center;
+}
+
+.MKINQUIRY .c-table__td {
+    text-align: center;
+    padding: 13px 15px;
+}

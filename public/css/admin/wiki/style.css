@@ -1,0 +1,134 @@
+.MKWIKI.l-inner {
+    max-width: 1250px;
+}
+
+.MKWIKI .c-sidebar-nav__icon--wiki {
+    background: url("../../../img/admin/common/wikipedia.svg") no-repeat;
+}
+
+.MKWIKI .c-sidebar-nav__link.is-current .c-sidebar-nav__icon--wiki {
+    background: url("../../../img/admin/common/wikipedia-w.svg") no-repeat;
+}
+
+.MKWIKI .wiki {
+    display: flex;
+    justify-content: space-between;
+}
+
+.MKWIKI .left-main-box {
+    width: 67%;
+}
+
+.MKWIKI .right-main-box {
+    width: 30%;
+}
+
+.MKWIKI .left-box {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 30px;
+}
+
+.MKWIKI .ttl-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.MKWIKI .wiki-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.MKWIKI .c-label {
+    color: #000;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+}
+
+.MKWIKI .text-editor {
+    width: 100%;
+    height: 250px;
+    background-color: #fff;
+}
+
+.MKWIKI .ql-toolbar.ql-snow {
+    width: 100%;
+    background-color: #fff;
+}
+
+.MKWIKI .file-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.MKWIKI .file-content {
+    width: 100%;
+}
+
+.MKWIKI .c-input.--file-input {
+    width: 99%;
+}
+
+.MKWIKI .clear-btn {
+    border: 1px solid #a7a7a7;
+    background-color: #fff;
+}
+
+.MKWIKI .--file-input:focus~.c-btn.--file-btn {
+    border: 2px solid #3a6073;
+}
+
+.MKWIKI .file-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.ql-editor {
+    line-height: 0.8;
+}
+
+.ql-editor ul {
+    line-height: 1.8;
+}
+
+.MKWIKI .u-border {
+    border: 1px solid #000;
+}
+
+.MKWIKI .img {
+    width: 150px;
+}
+
+.MKWIKI .modifier-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.MKWIKI .modifier-img {
+    width: 30px;
+    height: 30px;
+}
+
+.MKWIKI #js-wiki-delete-modal .c-modal-header {
+    color: #000000;
+    background: none !important;
+    border-bottom: 1px solid #959595;
+}
+
+.MKWIKI #js-wiki-delete-modal {
+    padding: 0;
+}
+
+.MKWIKI .breadcrumb {
+    color: #397ff4;
+}
+
+.MKWIKI .w-breadcrumb {
+    width: 45%;
+    line-height: 1.5;
+}

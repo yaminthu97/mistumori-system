@@ -1,0 +1,366 @@
+/* Toggle Button */
+
+.dark-mode-toggle {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 22px;
+    margin-right: 24px;
+    border: 1px solid var(--white-color);
+    background-color: var(--grey-bg);
+    cursor: pointer;
+    transition: border-color .25s, background-color .25s;
+    border-radius: 11px;
+    flex-shrink: 0;
+}
+
+.toggle-switch {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 18px;
+    height: 18px;
+    background-color: var(--white-color);
+    transition: background-color .25s, transform .25s;
+    border-radius: 50%;
+}
+
+.toggle-switch-icon {
+    display: block;
+    position: relative;
+    width: 18px;
+    height: 18px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.toggle-switch-icon img {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 14px;
+    height: 14px;
+}
+
+.dark .toggle-switch-icon img {
+    transition: opacity .25s;
+}
+
+.toggle-switch-sun,
+.dark .toggle-switch-moon {
+    opacity: 1;
+}
+
+.toggle-switch-moon,
+.dark .toggle-switch-sun {
+    opacity: 0;
+}
+
+.dark .toggle-switch {
+    transform: translate(18px);
+}
+
+.dark body,
+.dark a {
+    color: var(--grey-text-color);
+}
+
+/* Dark mode Styles */
+
+:root {
+    --white-color: #fff;
+    --blue-color: #008cff;
+    --orange-color: #f8ae3a;
+    --orange-btn-bg: #4e410d;
+    --orange-btn-border: #b79157;
+    --primary-blue-color: #8cb4ff;
+    --primary-btn-bg: #1b3e62;
+    --primary-btn-border: #296eb5;
+    --red-color: #e83c4c;
+    --grey-text-color: #d1d5db;
+    --text-muted-color: #6f7d94;
+    --border-color: #4f565e;
+    --grey-bg: #d8d8d8;
+    --dark-grey-bg: #0f172a;
+    --input-bg-color: #1E293B;
+    --form-bg-color: #1c1e21;
+    --bg-muted-color: #353535;
+    --dark-blue-color: #134aaf;
+    --switch-off-color: #757f94;
+}
+
+html[data-theme='dark']:root {
+    color-scheme: dark;
+}
+
+html[data-theme='dark'] {
+    .c-header,
+    .noti-close-btn {
+        background: linear-gradient(90deg, rgba(0, 66, 95, 1) 35%, rgb(0, 115, 131) 100%);
+    }
+
+    .c-sidebar,
+    .c-main,
+    .dark-mode-toggle,
+    .ui-datepicker,
+    .pj-detail-screen .c-table-body.--horizontal .c-table__th,
+    .pj-detail-screen .c-table-body.--horizontal .c-table__td,
+    .c-box.--frame,
+    .c-pulldown,
+    .c-petname,
+    .MKWIKI .left-box {
+        background-color: var(--dark-grey-bg);
+    }
+
+    .c-input,
+    .c-select__item,
+    .c-label,
+    .c-table-head,
+    .c-btn.--edit,
+    .c-textarea,
+    .c-btn.--file-btn,
+    .c-modal--profile .user-profile__name,
+    .c-modal--profile .dropdown-menu__item a,
+    .logout__btn,
+    .c-btn.--frame.--bl.back-btn,
+    .u-heading-h1,
+    .notification-list,
+    .MKWIKI .text-editor,
+    .MKWIKI .ql-toolbar,
+    .fc-01 {
+        color: var(--grey-text-color);
+    }
+
+    .c-input:focus,
+    .c-select__item:focus,
+    .c-textarea:focus {
+        border-color: var(--blue-color);
+    }
+
+    .c-select:after {
+        border-color: var(--grey-text-color) transparent transparent transparent;
+    }
+
+    .u-heading-h3,
+    .c-table__th.--thead,
+    .c-btn.--bl,
+    .tab-link li a.active-link,
+    .comment-edit-link,
+    .estimate-edit-link,
+    .MKLOCALE .c-btn,
+    .answer-edit-link,
+    .c-btn.--edit,
+    .clear-btn {
+        color: var(--primary-blue-color);
+    }
+
+    .c-breadcrumb__item:last-child,
+    .c-sidebar-nav__link,
+    .MKINQUIRY .edit-link-disable,
+    .MKINQUIRY .answer-link-disable {
+        color: var(--text-muted-color);
+    }
+
+    .c-sidebar-nav__link.is-current,
+    .c-header-primary-nav__name,
+    .c-modal-header__title.--dialog,
+    #js-comment-edit-modal .c-modal-header,
+    #js-comment-delete-modal .c-modal-header,
+    #js-estimate-edit-modal .c-modal-header,
+    #js-estimate-delete-modal .c-modal-header,
+    .MKINQUIRY #js-answer-edit-modal .c-modal-header,
+    .MKINQUIRY #js-answer-delete-modal .c-modal-header,
+    .noti-close-btn,
+    .comment-modal-header,
+    .MKPROJECT .tooltip .tooltiptext,
+    .MKINQUIRY .tooltip .tooltiptext {
+        color: var(--white-color);
+    }
+
+    .c-btn.--bl,
+    .MKLOCALE .c-btn,
+    .c-btn.--edit,
+    .clear-btn {
+        border: 1px solid var(--primary-btn-border);
+        background-color: var(--primary-btn-bg);
+    }
+
+    .c-sidebar-nav__link.is-current,
+    .c-label,
+    .c-btn.--frame.--rd,
+    .c-btn.--frame.--search,
+    section.p-MK02013,
+    .p-MK02016,
+    .content,
+    #js-comment-edit-modal .comment-table .comment-th,
+    #js-comment-edit-modal .comment-table .comment-td,
+    #js-estimate-edit-modal .estimate-table .estimate-th,
+    #js-estimate-edit-modal .estimate-table .estimate-td,
+    .MKINQUIRY .pj-detail-screen .c-table-body.--horizontal .c-table__th,
+    .MKINQUIRY #js-answer-edit-modal .comment-table .comment-th,
+    .MKINQUIRY #js-answer-edit-modal .comment-table .comment-td,
+    .pj-detail-table .c-input,
+    .pj-detail-screen .c-table .c-input {
+        background-color: unset;
+    }
+
+    .c-sidebar-nav__list>.c-sidebar-nav__item {
+        border-bottom: 1px solid transparent;
+    }
+
+    .c-sidebar-nav__icon,
+    .c-modal--profile .icon--user::before,
+    .c-modal--profile .icon--setting a::before,
+    .c-modal--profile .icon--user-guide a::before,
+    .user-icon {
+        filter: invert(49%) sepia(13%) saturate(655%) hue-rotate(178deg) brightness(97%) contrast(83%);
+    }
+
+    .c-datepicker:after {
+        filter: invert(87%) sepia(8%) saturate(144%) hue-rotate(177deg) brightness(99%) contrast(88%);
+    }
+
+    .c-sidebar-nav__link.is-current .c-sidebar-nav__icon--customer,
+    .c-sidebar-nav__link.is-current .c-sidebar-nav__icon--project,
+    .c-sidebar-nav__link.is-current .c-sidebar-nav__icon--question,
+    .c-sidebar-nav__link.is-current .c-sidebar-nav__icon--account,
+    .c-sidebar-nav__link.is-current .c-sidebar-nav__icon--wiki {
+        filter: unset;
+    }
+
+    .c-modal--profile .dropdown-menu__item a:hover,
+    .logout__btn:hover,
+    .u-link.--link-color,
+    .MKINQUIRY .list-detail,
+    .c-input.a-link,
+    .c-btn.--rd,
+    .c-btn.--search,
+    .p-mention-user,
+    .MKWIKI .breadcrumb,
+    .MKWIKI .ql-editor a {
+        color: var(--orange-color);
+    }
+
+    .c-sidebar,
+    .c-table,
+    .c-table__th,
+    .c-table__td,
+    .dark-mode-toggle,
+    .c-section-header__title,
+    .c-btn.--frame.--bl.back-btn,
+    .MKINQUIRY .edit-link-disable {
+        border-color: var(--border-color);
+    }
+
+    .c-table__th.--thead {
+        border-width: 1px;
+    }
+
+    .c-box.--frame,
+    .c-pulldown,
+    .c-petname,
+    .MKWIKI .left-box {
+        border: 1px solid var(--orange-color);
+    }
+
+    .c-sidebar-nav__link.is-current,
+    .c-input,
+    .c-select__item,
+    .c-textarea,
+    .c-checkbox__label,
+    .pj-detail-screen .c-table.estimate-table .c-input,
+    .MKINQUIRY .comment-list,
+    .MKWIKI .text-editor,
+    .MKWIKI .ql-toolbar,
+    .content-tile .content-box,
+    .content-tile.auth-user .content-box,
+    .more {
+        background-color: var(--input-bg-color);
+    }
+
+    .c-table-head,
+    .c-table__th,
+    .c-table__td,
+    .tab-link .a-tab,
+    .c-modal,
+    .content-input-blk {
+        background-color: var(--form-bg-color);
+    }
+
+    .c-btn.--rd,
+    .c-btn.--search {
+        background-color: var(--orange-btn-bg);
+        border-color: var(--orange-btn-border);
+    }
+
+    .u-link.--add2:before {
+        filter: invert(28%) sepia(12%) saturate(6100%) hue-rotate(191deg) brightness(104%) contrast(102%);
+    }
+
+    .c-section-header__title:before {
+        background-color: var(--primary-blue-color);
+    }
+
+    .u-color.--warning,
+    .deadline,
+    .comment-delete-link,
+    .estimate-delete-link,
+    .answer-delete-link {
+        color: var(--red-color);
+    }
+
+    .switch input:checked+.switch-card,
+    .c-checkbox__input:checked+.c-checkbox__label,
+    .ui-state-highlight,
+    .proj-progress-btn {
+        background-color: var(--dark-blue-color);
+    }
+
+    .u-fw--bold {
+        color: var(--grey-text-color);
+    }
+
+    .c-btn.--file-btn,
+    .MKINQUIRY .edit-link-disable,
+    .c-btn.--frame.--bl.back-btn {
+        background-color: var(--bg-muted-color);
+    }
+
+    .icon-btn,
+    .c-modal--profile .dropdown-menu__item a:hover::before {
+        filter: invert(62%) sepia(50%) saturate(592%) hue-rotate(355deg) brightness(106%) contrast(95%);
+    }
+
+    .tab-link li a.active-link,
+    .tab .active-content,
+    .content-input-blk {
+        border-color: var(--primary-blue-color);
+    }
+
+    .MKPROJECT .tooltip .tooltiptext,
+    .MKINQUIRY .tooltip .tooltiptext,
+    .switch-card {
+        background-color: var(--switch-off-color);
+    }
+
+    .MKPROJECT .tooltip .tooltiptext::after,
+    .MKINQUIRY .tooltip .tooltiptext::after {
+        border-color: var(--switch-off-color) transparent transparent transparent;
+    }
+
+    .content-tile .content-box {
+        border: 1px solid var(--primary-blue-color);
+    }
+
+    .content-tile.auth-user .content-box {
+        border: 1px solid var(--grey-text-color);
+    }
+
+    .content-tile .content-box::before {
+        border-bottom: 12px solid var(--primary-blue-color);
+    }
+
+    .content-tile.auth-user .content-box::before {
+        border-bottom: 12px solid var(--grey-text-color);
+    }
+}

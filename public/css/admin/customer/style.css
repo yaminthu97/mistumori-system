@@ -1,0 +1,113 @@
+.MKCUSTOMER .c-sidebar-nav__icon--customer {
+    background: url("../../../img/admin/common/icon_customer.svg") no-repeat;
+}
+
+.MKCUSTOMER .c-sidebar-nav__link.is-current .c-sidebar-nav__icon--customer {
+    background: url("../../../img/admin/common/icon_customer_white.svg")
+        no-repeat;
+}
+
+.MKCUSTOMER .customer-search-frame {
+    display: block;
+}
+
+.MKCUSTOMER .form-control .c-form__item {
+    margin-right: 0;
+}
+
+.MKCUSTOMER .customer-add {
+    padding-left: 28px !important;
+}
+
+.MKCUSTOMER .c-table.--noborder {
+    border: none;
+}
+
+.MKCUSTOMER .c-table__th {
+    background-color: transparent;
+}
+
+.MKCUSTOMER .switch {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 25px;
+}
+
+.MKCUSTOMER .switch input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.MKCUSTOMER .switch-card {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #ccc;
+    cursor: pointer;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.MKCUSTOMER .switch-card:before {
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    width: 17px;
+    height: 17px;
+    background-color: white;
+    content: "";
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.MKCUSTOMER input:checked + .switch-card {
+    background: #3a6073;
+}
+
+.MKCUSTOMER input:focus + .switch-card {
+    box-shadow: 0 0 1px #3a6073;
+}
+
+.MKCUSTOMER input:checked + .switch-card:before {
+    -webkit-transform: translateX(21px);
+    -ms-transform: translateX(21px);
+    transform: translateX(21px);
+}
+
+.MKCUSTOMER .switch-card.round {
+    border-radius: 34px;
+}
+
+.MKCUSTOMER .switch-card.round:before {
+    border-radius: 50%;
+}
+
+.MKCUSTOMER .require-txt {
+    padding: 0 5px;
+    color: #eb2424;
+    font-weight: bold;
+}
+
+.MKCUSTOMER .s-lh {
+    line-height: 0.5;
+}
+
+.MKCUSTOMER .c-label {
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+    border-radius: 0;
+}
+
+.MKCUSTOMER .p-MK02013-table__th {
+    text-align: center;
+}
+
+.MKCUSTOMER .p-MK02013-table__td {
+    padding: 13px 15px;
+    text-align: center;
+}

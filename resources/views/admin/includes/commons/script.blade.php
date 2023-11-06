@@ -1,0 +1,9 @@
+<script src="{{ asset('js/admin/jquery-3.6.0.min.js'.jsCssForceReload()) }}"></script>
+<script src="{{ asset('js/admin/simplebar.min.js'.jsCssForceReload()) }}"></script>
+<script src="{{ asset('js/admin/common.js'.jsCssForceReload()) }}"></script>
+<script src="{{ asset('js/admin/jquery-ui.min.js'.jsCssForceReload()) }}"></script>
+<script src="{{ asset('js/admin/datepicker-ja.js'.jsCssForceReload()) }}"></script>
+<script src="{{ asset('js/admin/jquery.datetimepicker.full.min.js'.jsCssForceReload()) }}"></script>
+<script src="{{ asset('js/admin/jquery.jpostal.js'.jsCssForceReload()) }}"></script>
+<script src="{{ asset('js/admin/quill_1.3.7_quill.min.js'.jsCssForceReload()) }}"></script>
+<script src="{{ asset('js/admin/intro.min.js' . jsCssForceReload()) }}"></script>

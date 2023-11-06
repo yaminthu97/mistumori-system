@@ -1,0 +1,55 @@
+/*custom css  for onboarding*/
+.introjs-tooltip-step1 {
+    position: fixed;
+    width: 400px;
+    max-width: 400px;
+}
+
+.introjs-tooltip-title, .introjs-skipbutton{
+    text-align: center;
+    font-weight: bold;
+    color: #3A6073;
+}
+
+.introjs-tooltiptext {
+    text-align: center;
+    line-height: 19px;
+    color: #000000;
+}
+
+.introjs-progress {
+    height: 5px;
+}
+
+.introjs-tooltipbuttons a.introjs-nextbutton {
+    background: #3A6073;
+    color: #ffffff;
+    text-shadow: 0 0 0 #ffffff;
+    border: none;
+}
+
+.introjs-tooltipbuttons a.introjs-nextbutton:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.introjs-tooltip-step3 {
+    width: 292px;
+}
+
+.introjs-tooltip-step4 {
+    width: 305px;
+}
+
+.introjs-tooltip-step6 {
+    width: 305px;
+}
+
+.introjs-tooltip-step-7-8-9-10 {
+    width: 325px;
+    max-width: 400px;
+}
+
+.introjs-skipbutton {
+    display: none;
+}
